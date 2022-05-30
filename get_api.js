@@ -3,10 +3,10 @@ const countElement = document.getElementById('count');
 
 updateVisitCount();
 
-function updateVisitCount() {
+function updateViewCount() {
     fetch(countUrl)
         .then(res => res.json())
         .then(res => {
-        countElement.innerHTML = res.Quantity;
+        countElement.innerHTML = res.value;
     });
 }
