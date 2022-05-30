@@ -1,7 +1,7 @@
 const countUrl = 'https://igf5ctozsa.execute-api.us-east-1.amazonaws.com/default/updateViews'
 const countElement = document.getElementById('count');
 
-updateVisitCount();
+updateViewCount();
 
 function updateViewCount() {
     fetch(countUrl)
