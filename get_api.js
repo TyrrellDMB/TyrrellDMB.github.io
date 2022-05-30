@@ -3,7 +3,7 @@ const countElement = document.getElementById('count');
 
 updateViewCount();
 
-function updateViewCount() {
+async function updateViewCount() {
     return  await fetch("countUrl"),
     {
       method: "GET",
