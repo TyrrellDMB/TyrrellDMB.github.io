@@ -20,5 +20,5 @@ async function getvisits(){
 
 async function visitCount() {
 	var visits = await getvisits();
-	document.getElementById("count").innerHTML = visits
+	document.getElementById("count").innerHTML = Quantity
 }
