@@ -2,9 +2,6 @@
   Have focus outline only for keyboard users 
  ---------------------------------------- */
 
-const countUrl = 'https://igf5ctozsa.execute-api.us-east-1.amazonaws.com/default/updateViews'
-const countElement = document.getElementById('count');
-
 const handleFirstTab = (e) => {
   if(e.key === 'Tab') {
     document.body.classList.add('user-is-tabbing')
@@ -45,12 +42,3 @@ window.addEventListener("scroll", () => {
   }
 });
 
-function updateVisitCount() {
-    fetch(countUrl)
-        .then(res => res.json())
-        .then(res => {
-        countElement.innerHTML = res.visits;
-    });
-}
-
-updateVisitCount();
