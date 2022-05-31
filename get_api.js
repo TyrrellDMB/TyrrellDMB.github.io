@@ -7,6 +7,6 @@ function updateViewCount() {
     fetch(countUrl)
         .then(res => res.json())
         .then(res => {
-        countElement.innerText = res.updateViews;
+        countElement.innerText = res.val;
     });
 }
