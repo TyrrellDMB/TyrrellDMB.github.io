@@ -15,6 +15,8 @@ def lambda_handler(event, context):
         )
         
     value = response['Attributes']['Quantity']['N']
+
+    val = int(value)
     
     return {      
             'statusCode': 200,
@@ -24,7 +26,7 @@ def lambda_handler(event, context):
             'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
                 
             },
-            'body': value
+            'body': val
         
     }
    
