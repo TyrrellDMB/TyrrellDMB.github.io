@@ -3,18 +3,8 @@ const countElement = document.getElementById('count');
 
 updateViewCount();
 
-async function updateViewCount() {
-    return  await fetch("countUrl"),
-    {
-      method: "GET",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-		'Access-Control-Allow-Headers': '*',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': '*'
-      },
-    }
+function updateViewCount() {
+    fetch(countUrl)
         .then(res => res.json())
         .then(res => {
         countElement.innerHTML = res.stats;
