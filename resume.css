@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+
+html,body,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+i{
+  margin: 5px;
+}
+a{
+  text-decoration: none;
+
+}
+/* individual css hover */
+
+/* .fas:hover{
+  color: white;
+}
+.fab:hover{
+  color: white;
+}
+.fa:hover{
+  color: white;
+} */
+
+#icons:hover{
+  color:#f3f3f3;
+}
+
+/* Gradient transparent - color - transparent */
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
