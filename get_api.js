@@ -3,6 +3,8 @@ const countElement = document.getElementById('count');
 
 updateViewCount();
 
+//Function Used to Update ViewCounter 
+
 function updateViewCount() {
     fetch(countUrl)
         .then(res => res.json())
