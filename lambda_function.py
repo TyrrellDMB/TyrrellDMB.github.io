@@ -1,5 +1,7 @@
 import json, boto3
 
+#API Used to Update Info From DynamoDB
+
 client = boto3.client('dynamodb')
 TableName = 'cloud-resume-stats'
 
